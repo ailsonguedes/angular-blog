@@ -2,7 +2,7 @@
     <div class="big-card__photo">
       <a href="#">
         <img
-        src="https://miro.medium.com/v2/resize:fit:1400/0*DTy8tlNHXGc0g4sB"
+        src="{{ photoCover }}"
         alt=""
         height="200px"
         srcset="">
@@ -14,16 +14,13 @@
     </div>
 
     <div class="big-card__title">
-      <h1><a href="#">Saiu a nova versão do Angular</a></h1>
+      <h1><a [routerLink]="['content', id]">{{ cardTitle }}</a></h1>
     </div>
 
     <div class="big-card__description">
       <p>
         <a href="#">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Morbi ac lacus sit amet nibh egestas dictum sed vitae arcu.
-          Aenean sed venenatis quam, id tempus sem.
-          Etiam et rutrum sapien, non condimentum ex.
+          {{ cardDescription }}
         </a>
       </p>
     </div>

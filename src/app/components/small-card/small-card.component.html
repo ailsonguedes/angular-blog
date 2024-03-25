@@ -1,7 +1,7 @@
 <div class="container__small-card">
   <div class="container__small-card-content">
     <div class="small-card__photo">
-      <a href="#">
+      <a [routerLink]="['content', id]">
         <img
         src="https://haricodes.com/static/3e3c5a5293142d32ea5cda6a0adcf492/ca411/angular-free-cover.png"
         alt="">
@@ -9,7 +9,7 @@
     </div>
 
     <div class="small-card__title">
-      <h2><a href="#">Aprenda componentes no Angular</a></h2>
+      <h2><a [routerLink]="['content', id]">Aprenda componentes no Angular</a></h2>
     </div>
   </div>
 
